@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CommerceAI.AI/CommerceAI.AI.csproj" />
+    <Project Path="src/CommerceAI.Api/CommerceAI.Api.csproj" />
+    <Project Path="src/CommerceAI.Application/CommerceAI.Application.csproj" />
+    <Project Path="src/CommerceAI.Domain/CommerceAI.Domain.csproj" />
+    <Project Path="src/CommerceAI.Infrastructure/CommerceAI.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CommerceAI.UnitTests/CommerceAI.UnitTests.csproj" />
+  </Folder>
+</Solution>
