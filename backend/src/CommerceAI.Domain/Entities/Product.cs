@@ -4,24 +4,27 @@ namespace CommerceAI.Domain.Entities;
 
 public class Product
 {
-    public Guid Id { get; private set; }
+    public Guid Id { get; private set;}
 
-    public string Name { get; private set; }
+    public string Name { get; private set; } = string.Empty;
 
-    public string SKU { get; private set; }
+    public string SKU { get; private set; } = string.Empty;
 
-    public string Description { get; private set; }
+    public string Description { get; private set; } = string.Empty;
 
     public decimal Price { get; private set; }
 
     public int QuantityInStock { get; private set; }
 
-    public string CategoryName { get; private set; }
+    public string CategoryName { get; private set; } = string.Empty;
 
-    public string ImageUrl { get; private set; }
+    public string ImageUrl { get; private set; } = string.Empty;
 
     public ProductStatus Status { get; private set; }
 
+    private Product()
+    {
+    }
     public Product(
         Guid id,
         string name,
@@ -50,7 +53,7 @@ public class Product
         if (string.IsNullOrWhiteSpace(name))
             throw new ArgumentException("Product name is required.");
 
-        Name = name;
+        Name = name.Trim();
     }
 
     public void UpdateSku(string sku)
@@ -58,12 +61,12 @@ public class Product
         if (string.IsNullOrWhiteSpace(sku))
             throw new ArgumentException("SKU is required.");
 
-        SKU = sku;
+        SKU = sku.Trim().ToUpperInvariant();
     }
 
     public void UpdateDescription(string description)
     {
-        Description = description ?? string.Empty;
+        Description = description?.Trim() ?? string.Empty;
     }
 
     public void UpdatePrice(decimal price)
@@ -84,12 +87,12 @@ public class Product
 
     public void UpdateCategory(string category)
     {
-        CategoryName = category ?? string.Empty;
+        CategoryName = category?.Trim() ?? string.Empty;
     }
 
     public void UpdateImage(string imageUrl)
     {
-        ImageUrl = imageUrl ?? string.Empty;
+        ImageUrl = imageUrl?.Trim() ?? string.Empty;
     }
 
     public void Activate()
