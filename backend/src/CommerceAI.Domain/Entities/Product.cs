@@ -48,6 +48,17 @@ public class Product
         Status = ProductStatus.Draft;
     }
 
+    public Product(string name, string sKU, string description, decimal price, int quantityInStock, string categoryName, string imageUrl)
+    {
+        Name = name;
+        SKU = sKU;
+        Description = description;
+        Price = price;
+        QuantityInStock = quantityInStock;
+        CategoryName = categoryName;
+        ImageUrl = imageUrl;
+    }
+
     public void UpdateName(string name)
     {
         if (string.IsNullOrWhiteSpace(name))

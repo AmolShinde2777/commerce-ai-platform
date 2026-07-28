@@ -1,3 +1,4 @@
+using CommerceAI.Api.Endpoints;
 using CommerceAI.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.MapProductEndpoints();
 
 // Health endpoint
 app.MapGet("/", () =>

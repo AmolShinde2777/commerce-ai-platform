@@ -1,4 +1,7 @@
+using CommerceAI.Application.Products.Commands.CreateProduct;
+using CommerceAI.Domain.Interfaces;
 using CommerceAI.Infrastructure.Persistence;
+using CommerceAI.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +19,8 @@ public static class DependencyInjection
             options.UseNpgsql(
                 configuration.GetConnectionString("DefaultConnection"));
         });
+        services.AddScoped<IProductRepository, ProductRepository>();
+        services.AddScoped<CreateProductHandler>();
 
         return services;
     }
