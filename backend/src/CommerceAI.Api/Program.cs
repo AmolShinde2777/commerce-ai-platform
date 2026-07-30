@@ -31,6 +31,9 @@ app.MapGet("/", () =>
         Status = "Running",
         Timestamp = DateTime.UtcNow
     });
-});
+})
+.WithName("HealthCheck")
+.WithSummary("Returns API health/status")
+.WithTags("Health");
 
 app.Run();
