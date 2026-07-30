@@ -1,24 +1,37 @@
-# CommerceAI Platform
+# Commerce AI Platform
 
-A production-grade AI-powered commerce platform built using:
+An AI-first commerce platform that demonstrates how AI agents can manage products using natural language through tool calling.
 
-- React
-- .NET
+## Tech Stack
+
+- .NET 10
+- ASP.NET Core Minimal APIs
+- Clean Architecture
 - PostgreSQL
-- Docker
-- Agentic AI
+- React + TypeScript (Next)
+- OpenAI / Ollama (Planned)
 
-This project is being built from scratch as a learning journey toward production AI engineering.
+## Current Progress
 
-## Roadmap
+- ✅ Milestone 1 – Product Foundation
+- ✅ Milestone 2 – Product Management API
+- 🚧 Milestone 3 – AI-First React Frontend
+- 🚧 Milestone 4 – Public Cloud Deployment
+- 🚧 Milestone 5 – AI Tool Calling
+- 🚧 Milestone 6 – Agentic Workflows
 
-- [ ] Backend APIs
-- [ ] React Admin Portal
-- [ ] PostgreSQL
-- [ ] Authentication
-- [ ] AI Chat Assistant
-- [ ] Tool Calling
-- [ ] RAG
-- [ ] Multi-Agent
-- [ ] Observability
-- [ ] Deployment
+## Implemented APIs
+
+- ✅ Create Product
+- ✅ Get Products
+- ✅ Update Product
+- ✅ Delete Product
+
+## Goal
+
+Build a production-inspired AI application that showcases:
+
+- AI Tool Calling
+- Agentic Workflows
+- React + .NET
+- Cloud Deployment

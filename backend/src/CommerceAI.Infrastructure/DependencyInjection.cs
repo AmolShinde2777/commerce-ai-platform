@@ -1,4 +1,7 @@
 using CommerceAI.Application.Products.Commands.CreateProduct;
+using CommerceAI.Application.Products.Commands.DeleteProduct;
+using CommerceAI.Application.Products.Commands.UpdateProduct;
+using CommerceAI.Application.Products.Queries.GetProducts;
 using CommerceAI.Domain.Interfaces;
 using CommerceAI.Infrastructure.Persistence;
 using CommerceAI.Infrastructure.Persistence.Repositories;
@@ -21,6 +24,9 @@ public static class DependencyInjection
         });
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<CreateProductHandler>();
+        services.AddScoped<GetProductsHandler>();
+        services.AddScoped<UpdateProductHandler>();
+        services.AddScoped<DeleteProductHandler>();
 
         return services;
     }
