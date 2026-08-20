@@ -1,6 +1,6 @@
 # Commerce AI Platform
 
-An AI-first commerce platform that demonstrates how AI agents can manage products using natural language through tool calling.
+An AI-first commerce platform that demonstrates how AI can interact with commerce data and APIs using natural language and tool calling.
 
 ## Tech Stack
 
@@ -8,14 +8,14 @@ An AI-first commerce platform that demonstrates how AI agents can manage product
 - ASP.NET Core Minimal APIs
 - Clean Architecture
 - PostgreSQL
-- React + TypeScript (Next)
+- React + TypeScript
 - OpenAI / Ollama (Planned)
 
 ## Current Progress
 
 - ✅ Milestone 1 – Product Foundation
 - ✅ Milestone 2 – Product Management API
-- 🚧 Milestone 3 – AI-First React Frontend
+- ✅ Milestone 3 – React Frontend + AI Chat UI
 - 🚧 Milestone 4 – Public Cloud Deployment
 - 🚧 Milestone 5 – AI Tool Calling
 - 🚧 Milestone 6 – Agentic Workflows
@@ -26,12 +26,15 @@ An AI-first commerce platform that demonstrates how AI agents can manage product
 - ✅ Get Products
 - ✅ Update Product
 - ✅ Delete Product
+- ✅ Chat API
 
 ## Goal
 
-Build a production-inspired AI application that showcases:
+Build a production-inspired AI commerce application showcasing:
 
 - AI Tool Calling
 - Agentic Workflows
+- Natural Language Product Management
 - React + .NET
+- PostgreSQL
 - Cloud Deployment
