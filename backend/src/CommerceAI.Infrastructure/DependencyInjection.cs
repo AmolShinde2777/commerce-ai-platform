@@ -8,6 +8,7 @@ using CommerceAI.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using CommerceAI.Application.Chat;
 
 namespace CommerceAI.Infrastructure;
 
@@ -27,6 +28,7 @@ public static class DependencyInjection
         services.AddScoped<GetProductsHandler>();
         services.AddScoped<UpdateProductHandler>();
         services.AddScoped<DeleteProductHandler>();
+        services.AddScoped<ChatHandler>();
 
         return services;
     }
