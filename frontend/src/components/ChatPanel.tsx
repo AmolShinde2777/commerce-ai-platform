@@ -10,7 +10,8 @@ interface ChatResponse {
   message: string;
 }
 
-const API_BASE_URL = 'http://localhost:5251';
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || 'http://localhost:5251';
 
 function ChatPanel() {
   const [messages, setMessages] = useState<Message[]>([
